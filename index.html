@@ -6,32 +6,34 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>Juego de Memoria - Parejas de Emojis</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div class="game-container">
-        <div class="info-panel">
-          <div class="stats">
-            <p>INTENTOS <span id="movesCount">0</span></p>
-          </div>
-
-          <button id="resetGameBtn">REINICIAR</button>
+    <div class="game-container">
+      <div class="info-panel">
+        <div class="stats">
+          <p>INTENTOS <span id="movesCount">0</span></p>
         </div>
 
-        <div class="grid" id="memoryGrid"></div>
-        <div
-          id="winMessage"
-          style="
-            text-align: center;
-            margin-top: 15px;
-            font-weight: bold;
-            min-height: 50px;
-          "
-        ></div>
+        <button id="resetGameBtn">REINICIAR</button>
       </div>
+
+      <div class="grid" id="memoryGrid"></div>
+      <div
+        id="winMessage"
+        style="
+          text-align: center;
+          margin-top: 15px;
+          font-weight: bold;
+          min-height: 50px;
+        "
+      ></div>
+    </div>
 
     <script type="module" src="script.js"></script>
   </body>
